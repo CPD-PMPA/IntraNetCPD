@@ -1,0 +1,88 @@
+body {
+    margin: 0 auto;
+    background-image: url('/img/bg.png');
+}
+
+h1 {
+    font-size:30px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 3px solid rgb(29, 17, 194);
+    border-top: 3px solid rgb(29, 17, 194);
+    margin: 40px;
+    padding: 40px;
+    border-left: 2px solid #3a3738;
+    border-right: 2px solid #3a3738;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 3px solid rgb(29, 17, 194);
+    height: 65px;
+    position: relative;
+    font-size: 20px;
+}
+
+header ul {
+    margin-top: 15px;
+}
+
+header ul li {
+    display: inline-block !important;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    transition: 1s;
+}
+
+header ul li a:hover {
+    transition: 0.5s;
+    color: rgb(29, 17, 194);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 23px;
+    position: fixed;
+    border-top: 3px solid rgb(29, 17, 194);
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .fontup {
+    font-size: 18px;
+}
+
+.logo {
+    width: 275px;
+    float: left;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    width: 310px;
+    transition: 0.5s;
+}
+
+.campo {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campo:focus {
+    border: 2px solid #555;
+}
