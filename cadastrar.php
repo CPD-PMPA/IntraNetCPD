@@ -1,16 +1,23 @@
 <?php
-session_start();
-$strcon = mysqli_connect('localhost','root','','cpd_pmpa') or die('Erro ao conectar ao banco de dados');
-$nome = $_POST['nome'];
-$matricula = $_POST['matricula'];
-$telefone = $_POST['telefone'];
-$secretaria = $_POST['secretaria'];
-$patrimonio = $_POST['patrimonio'];
-$descricao = $_POST['descricao'];
-$tipo_chamado = $_POST['tipo_chamado'];
-$sql = "INSERT INTO cadastro VALUES ";
-$sql .= "('$nome', '$matricula', '$telefone', '$secretaria', '$patrimonio', '$descricao', '$tipo_chamado')"; 
-mysqli_query($strcon,$sql) or die("Erro ao tentar Abrir Chamado!");
-mysqli_close($strcon);
-echo "Chamado Aberto com sucesso!";
-?>
+    require 'config.php';
+
+    $nome = 
+    $matricula = 
+    $telefone = 
+    $secretaria = 
+    $patrimonio = 
+    $descricao = 
+    $tipo_chamado = 
+
+    $sql = 'INSERT INTO movies(nome, matricula, telefone, secretaria, patrimonio, descricao, tipo_chamado) VALUES (:nome, :matricula, :telefone, :secretaria, :patrimonio, :descricao, :tipo_chamado)';                                      
+    $e = $pdo->prepare($sql);
+    $e->bindParam(':nome', $_POST['nome']);       
+    $e->bindParam(':matricula', $_POST['matricula']); 
+    $e->bindParam(':telefone', $_POST['telefone']);
+    $e->bindParam(':secretaria', $_POST['secretaria']); 
+    $e->bindParam(':patrimonio', $_POST['patrimonio']);
+    $e->bindParam(':descricao', $_POST['descricao'];);
+    $e->bindParam(':tipo_chamado', $_POST['tipo_chamado'];);
+    $e->execute();
+
+    echo 'Sucesso';
