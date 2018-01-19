@@ -8,8 +8,8 @@
     $e->bindParam(':telefone', $_POST['telefone']);
     $e->bindParam(':secretaria', $_POST['secretaria']); 
     $e->bindParam(':patrimonio', $_POST['patrimonio']);
-    $e->bindParam(':descricao', $_POST['descricao'];);
-    $e->bindParam(':tipo_chamado', $_POST['tipo_chamado'];);
+    $e->bindParam(':descricao', $_POST['descricao']);
+    $e->bindParam(':tipo_chamado', $_POST['tipo_chamado']);
     $e->execute();
 
     echo 'Sucesso';
