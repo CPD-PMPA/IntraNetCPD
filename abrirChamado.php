@@ -3,7 +3,7 @@
 <h1>Abertura de Chamados - Departamento de TI</h1> 
 <form action="cadastrar.php" method="POST">
 Tipo De Chamado
-<select class="campo" name="tipo_chamado" method="POST" required>
+<select class="campo" name="tipo_chamado" required>
 <option class="campo">Selecione o Tipo de Chamado</option>
 <option value="Internet">Internet</option>
 <option value="Computador">Computador</option>
@@ -33,17 +33,18 @@ Tipo De Chamado
 <option value="telefone_comun">Telefone Comun</option>
 </select>
 <br/>
+  
+<!-- Por que de todos esses autofocus ? -->
+Nome <input type="text" class="campo" name="nome" placeholder="Nome" autofocus required />
+Matricula <input type="text" class="campo" name="matricula" placeholder="Matricula" autofocus required /><br/>
 
-Nome <input type="text" class="campo" name="nome" placeholder="Nome" autofocus required>
-Matricula <input type="text" class="campo" name="matricula" placeholder="Matricula" autofocus required><br/>
+Telefone <input type="text" class="campo" name="telefone" placeholder="Telefone" autofocus required />
+Secretaria <input type="text" class="campo" name="secretaria" placeholder="Secretaria" autofocus required /><br/>
 
-Telefone <input type="text" class="campo" name="telefone" placeholder="Telefone" autofocus required>
-Secretaria <input type="text" class="campo" name="secretaria" placeholder="Secretaria" autofocus required><br/>
-
-Patrimônio <input type="text" class="campo" name="patrimonio" placeholder="Patrimonio" autofocus required><br/>
+Patrimônio <input type="text" class="campo" name="patrimonio" placeholder="Patrimonio" autofocus required /><br/>
 Observação <textarea class="campo" data-ls-module="charCounter" maxlength="200" placeholder="Observação"></textarea><br/>
 
-<input type="submit" value="Abrir Chamado"> 
+<input type="submit" value="Abrir Chamado" /> 
 
 </form>
 <?php include 'footer.inc.php'; ?>
