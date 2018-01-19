@@ -1,7 +1,7 @@
 <?php
     require 'config.php';
 
-    $sql = 'INSERT INTO movies(nome, matricula, telefone, secretaria, patrimonio, descricao, tipo_chamado) VALUES (:nome, :matricula, :telefone, :secretaria, :patrimonio, :descricao, :tipo_chamado)';                                      
+    $sql = 'INSERT INTO cadastro (nome, matricula, telefone, secretaria, patrimonio, descricao, tipo_chamado) VALUES (:nome, :matricula, :telefone, :secretaria, :patrimonio, :descricao, :tipo_chamado)';                                      
     $e = $pdo->prepare($sql);
     $e->bindParam(':nome', $_POST['nome']);       
     $e->bindParam(':matricula', $_POST['matricula']); 
