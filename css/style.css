@@ -86,3 +86,49 @@ footer .fontup {
 .campo:focus {
     border: 2px solid #555;
 }
+
+.campo150 {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campo150:focus {
+    border: 2px solid #555;
+}
+
+.campo350 {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campo350:focus {
+    border: 2px solid #555;
+}
+
+.campo500 {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campo500:focus {
+    border: 2px solid #555;
+}
+
+.fontup {
+    font-size: 21px;
+}
