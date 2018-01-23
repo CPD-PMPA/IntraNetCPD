@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/960.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.5.2.min.js"></script>
+	<script src="script/jquery.maskedinput-1.3.min.js"></script>
 </head>
 <header>
         <div class="container_12">

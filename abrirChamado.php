@@ -34,16 +34,15 @@ Tipo De Chamado
 <br/>
   
 <input type="text" class="campo350" name="nome" placeholder="Nome"  required />
-<input type="text" class="campo150" name="matricula" placeholder="Matricula" maxlength="6" required /><br/>
-
-<input type="text" class="campo150 cel" name="telefone" placeholder="Tel p/ Contato" maxlength="16" required />
+<input type="number" class="campo150" name="matricula" placeholder="Matricula" maxlength="6" required /><br/>
+<input type="text" class="campo150 cel" name="telefone" placeholder="Tel p/ Contato" maxlength="15" required />
 <input type="text" class="campo350" name="secretaria" placeholder="Secretaria"  required /><br/>
-
+<input type="text" class="campo500" name="endereco" placeholder="Endereço de Atendimento" maxlength="200" required /><br/>
 <input type="text" class="campo500" name="descricao" placeholder="Descrição do Problema" maxlength="200" required /><br/>
-<input type="submit" value="Abrir Chamado" /> 
+<input type="submit" class="button" value="Abrir Chamado" /> 
 
 </form>
 
 
-<script type="text/javascript" src="script/abrirChamado.js"></script>   
+<script type="text/javascript" src="script/script.js"></script>   
 <?php include 'footer.inc.php'; ?>
