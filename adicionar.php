@@ -5,4 +5,5 @@
 <input type="text" placeholder="Solicitante" autofocus>
 <input type="text" placeholder="Secretaria" autofocus>
 <input type="button" value="Salvar"> 
+
 <?php include 'footer.inc.php' ?>

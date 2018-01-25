@@ -17,6 +17,7 @@
             <div class="grid_4 prefix_8">
                 <ul>
                     <li><a href="/">Home</a></li>   
+                    <li><a href="verChamados.php">Chamados</a></li>   
                 </ul>
             </div>
         </div>
